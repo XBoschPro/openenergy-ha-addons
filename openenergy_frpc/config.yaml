@@ -1,0 +1,36 @@
+name: "OpenEnergy FRP Client"
+description: "Runs frpc and exposes Home Assistant via an OpenEnergy-managed FRP tunnel."
+version: "0.1.0"
+slug: "openenergy_frpc"
+startup: services
+init: false
+
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+
+host_network: true
+
+options:
+  server_addr: ""
+  server_port: 7000
+  tls_enable: true
+  ha_uuid: ""
+  device_secret: ""
+  tunnel_domain: ""
+  local_ip: "127.0.0.1"
+  local_port: 8123
+
+schema:
+  server_addr: str
+  server_port: int
+  tls_enable: bool
+  ha_uuid: str
+  device_secret: str
+  tunnel_domain: str
+  local_ip: str
+  local_port: int
+
