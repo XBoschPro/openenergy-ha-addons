@@ -1,0 +1,3 @@
+[submodule "config/custom_components/openenergy"]
+	path = config/custom_components/openenergy
+	url = https://github.com/XBoschPro/OpenEnergy-ha-integration.git
