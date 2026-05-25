@@ -2,3 +2,8 @@
 	path = config/custom_components/OpenEnergy-ha-integration
 	url = https://github.com/XBoschPro/OpenEnergy-ha-integration.git
 	branch = main
+
+[submodule "config/custom_components/openenergy"]
+	path = config/custom_components/openenergy
+	url = https://github.com/XBoschPro/OpenEnergy-ha-integration.git
+	branch = main
